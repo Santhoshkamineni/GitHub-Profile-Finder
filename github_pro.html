@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GitHub Profile Finder</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container">
+    <h1>GitHub Finder</h1>
+
+    <div class="search-box">
+      <input type="text" id="username" placeholder="Enter GitHub username" />
+      <button onclick="getProfile()">Search</button>
+    </div>
+
+    <p class="error" id="error">User not found ❌</p>
+
+    <div class="profile" id="profile">
+      <img id="avatar" src="" alt="Avatar" />
+      <h2 id="name"></h2>
+      <p id="bio"></p>
+
+      <div class="stats">
+        <div>Repos<br><strong id="repos"></strong></div>
+        <div>Followers<br><strong id="followers"></strong></div>
+        <div>Following<br><strong id="following"></strong></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
